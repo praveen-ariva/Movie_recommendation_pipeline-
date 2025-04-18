@@ -1,0 +1,111 @@
+<div class="row mb-4">
+    <div class="col-12">
+        <h1>Your Personalized Recommendations</h1>
+        <p class="text-muted">Tailored recommendations for User #{{ user_id }}</p>
+    </div>
+</div>
+
+<!-- User's Top Rated Movies -->
+<div class="row mb-5 rec-section">
+    <div class="col-12">
+        <h2 class="mb-3">Your Top Rated Movies</h2>
+        <p class="text-muted mb-4">Movies you've rated highly</p>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card h-100 movie-card">
+            <div class="card-body">
+                <span class="badge bg-warning rating-badge">{{ movie.rating }} ★</span>
+                <h5 class="card-title">{{ movie.title }}</h5>
+                <p class="card-text text-muted">{{ movie.genres }}</p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+                <a href="{{ url_for('movie_details', movie_id=movie.movieId) }}" class="btn btn-sm btn-outline-primary w-100">Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Hybrid Recommendations -->
+<div class="row mb-5 rec-section">
+    <div class="col-12">
+        <h2 class="mb-3">Recommended For You</h2>
+        <p class="text-muted mb-4">Based on your preferences and similar users' tastes</p>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card h-100 movie-card">
+            <div class="card-body">
+                <span class="badge bg-primary rating-badge">{{ movie.avg_rating|round(1) }} ★</span>
+                <h5 class="card-title">{{ movie.title }}</h5>
+                <p class="card-text text-muted small">{{ movie.genres }}</p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+                <a href="{{ url_for('movie_details', movie_id=movie.movieId) }}" class="btn btn-sm btn-outline-primary w-100">Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Content-Based Recommendations -->
+<div class="row mb-5 rec-section">
+    <div class="col-12">
+        <h2 class="mb-3">Similar to Movies You Liked</h2>
+        <p class="text-muted mb-4">Based on genre, style, and content</p>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card h-100 movie-card">
+            <div class="card-body">
+                <span class="badge bg-primary rating-badge">{{ movie.avg_rating|round(1) }} ★</span>
+                <h5 class="card-title">{{ movie.title }}</h5>
+                <p class="card-text text-muted small">Similarity: {{ (movie.similarity_score * 100)|round(1) }}%</p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+                <a href="{{ url_for('movie_details', movie_id=movie.movieId) }}" class="btn btn-sm btn-outline-primary w-100">Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Collaborative Recommendations -->
+<div class="row mb-5 rec-section">
+    <div class="col-12">
+        <h2 class="mb-3">Users Like You Also Enjoyed</h2>
+        <p class="text-muted mb-4">Based on similar users' ratings</p>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card h-100 movie-card">
+            <div class="card-body">
+                <span class="badge bg-primary rating-badge">{{ movie.avg_rating|round(1) }} ★</span>
+                <h5 class="card-title">{{ movie.title }}</h5>
+                <p class="card-text text-muted small">Score: {{ movie.rec_score|round(2) }}</p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+                <a href="{{ url_for('movie_details', movie_id=movie.movieId) }}" class="btn btn-sm btn-outline-primary w-100">Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popular Movies -->
+<div class="row mb-5 rec-section">
+    <div class="col-12">
+        <h2 class="mb-3">Popular Movies You Might Like</h2>
+        <p class="text-muted mb-4">Top-rated movies with many reviews</p>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+        <div class="card h-100 movie-card">
+            <div class="card-body">
+                <span class="badge bg-primary rating-badge">{{ movie.avg_rating|round(1) }} ★</span>
+                <h5 class="card-title">{{ movie.title }}</h5>
+                <p class="card-text text-muted small">{{ movie.rating_count }} ratings</p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+                <a href="{{ url_for('movie_details', movie_id=movie.movieId) }}" class="btn btn-sm btn-outline-primary w-100">Details</a>
+            </div>
+        </div>
+    </div>
+</div>

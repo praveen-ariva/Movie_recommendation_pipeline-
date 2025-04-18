@@ -1,0 +1,148 @@
+2025-04-17 17:34:42,883 - models.recommendation_engine - INFO - Loading data from database
+2025-04-17 17:34:42,945 - models.recommendation_engine - INFO - Loaded 9742 movies
+2025-04-17 17:34:43,069 - models.recommendation_engine - INFO - Loaded 100836 ratings
+2025-04-17 17:34:43,081 - models.recommendation_engine - INFO - Loaded 22050 genre entries
+2025-04-17 17:34:43,083 - models.recommendation_engine - INFO - Found 610 unique users
+2025-04-17 17:34:43,083 - models.recommendation_engine - INFO - Building content-based recommendation model
+2025-04-17 17:34:43,715 - models.recommendation_engine - INFO - Content-based model built successfully
+2025-04-17 17:34:43,716 - models.recommendation_engine - INFO - Building collaborative filtering model
+2025-04-17 17:34:43,767 - models.recommendation_engine - INFO - Collaborative filtering model built successfully
+2025-04-17 17:34:43,800 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-17 17:34:43,800 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-17 17:34:43,801 - werkzeug - INFO -  * Restarting with stat
+2025-04-17 17:34:44,614 - models.recommendation_engine - INFO - Loading data from database
+2025-04-17 17:34:44,625 - models.recommendation_engine - INFO - Loaded 9742 movies
+2025-04-17 17:34:44,722 - models.recommendation_engine - INFO - Loaded 100836 ratings
+2025-04-17 17:34:44,734 - models.recommendation_engine - INFO - Loaded 22050 genre entries
+2025-04-17 17:34:44,734 - models.recommendation_engine - INFO - Found 610 unique users
+2025-04-17 17:34:44,734 - models.recommendation_engine - INFO - Building content-based recommendation model
+2025-04-17 17:34:45,332 - models.recommendation_engine - INFO - Content-based model built successfully
+2025-04-17 17:34:45,333 - models.recommendation_engine - INFO - Building collaborative filtering model
+2025-04-17 17:34:45,381 - models.recommendation_engine - INFO - Collaborative filtering model built successfully
+2025-04-17 17:34:45,396 - werkzeug - WARNING -  * Debugger is active!
+2025-04-17 17:34:45,407 - werkzeug - INFO -  * Debugger PIN: 760-779-162
+2025-04-17 17:49:28,847 - models.recommendation_engine - INFO - Loading data from database
+2025-04-17 17:49:28,859 - models.recommendation_engine - INFO - Loaded 9742 movies
+2025-04-17 17:49:28,952 - models.recommendation_engine - INFO - Loaded 100836 ratings
+2025-04-17 17:49:28,963 - models.recommendation_engine - INFO - Loaded 22050 genre entries
+2025-04-17 17:49:28,965 - models.recommendation_engine - INFO - Found 610 unique users
+2025-04-17 17:49:28,965 - models.recommendation_engine - INFO - Building content-based recommendation model
+2025-04-17 17:49:29,435 - models.recommendation_engine - INFO - Content-based model built successfully
+2025-04-17 17:49:29,436 - models.recommendation_engine - INFO - Building collaborative filtering model
+2025-04-17 17:49:29,483 - models.recommendation_engine - INFO - Collaborative filtering model built successfully
+2025-04-17 17:49:29,508 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-17 17:49:29,508 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-17 17:49:29,509 - werkzeug - INFO -  * Restarting with stat
+2025-04-17 17:49:30,098 - models.recommendation_engine - INFO - Loading data from database
+2025-04-17 17:49:30,108 - models.recommendation_engine - INFO - Loaded 9742 movies
+2025-04-17 17:49:30,204 - models.recommendation_engine - INFO - Loaded 100836 ratings
+2025-04-17 17:49:30,216 - models.recommendation_engine - INFO - Loaded 22050 genre entries
+2025-04-17 17:49:30,216 - models.recommendation_engine - INFO - Found 610 unique users
+2025-04-17 17:49:30,216 - models.recommendation_engine - INFO - Building content-based recommendation model
+2025-04-17 17:49:30,777 - models.recommendation_engine - INFO - Content-based model built successfully
+2025-04-17 17:49:30,778 - models.recommendation_engine - INFO - Building collaborative filtering model
+2025-04-17 17:49:30,825 - models.recommendation_engine - INFO - Collaborative filtering model built successfully
+2025-04-17 17:49:30,841 - werkzeug - WARNING -  * Debugger is active!
+2025-04-17 17:49:30,847 - werkzeug - INFO -  * Debugger PIN: 760-779-162
+2025-04-17 17:57:29,067 - werkzeug - INFO -  * Detected change in '/Users/praveen/movie_recommendation_pipeline/test_flask.py', reloading
+2025-04-17 17:57:29,272 - werkzeug - INFO -  * Restarting with stat
+2025-04-17 17:57:30,176 - models.recommendation_engine - INFO - Loading data from database
+2025-04-17 17:57:30,187 - models.recommendation_engine - INFO - Loaded 9742 movies
+2025-04-17 17:57:30,282 - models.recommendation_engine - INFO - Loaded 100836 ratings
+2025-04-17 17:57:30,294 - models.recommendation_engine - INFO - Loaded 22050 genre entries
+2025-04-17 17:57:30,295 - models.recommendation_engine - INFO - Found 610 unique users
+2025-04-17 17:57:30,295 - models.recommendation_engine - INFO - Building content-based recommendation model
+2025-04-17 17:57:30,905 - models.recommendation_engine - INFO - Content-based model built successfully
+2025-04-17 17:57:30,906 - models.recommendation_engine - INFO - Building collaborative filtering model
+2025-04-17 17:57:30,955 - models.recommendation_engine - INFO - Collaborative filtering model built successfully
+2025-04-17 17:57:30,972 - werkzeug - WARNING -  * Debugger is active!
+2025-04-17 17:57:30,979 - werkzeug - INFO -  * Debugger PIN: 760-779-162
+2025-04-17 18:06:24,278 - models.recommendation_engine - INFO - Loading data from database
+2025-04-17 18:06:24,293 - models.recommendation_engine - INFO - Loaded 9742 movies
+2025-04-17 18:06:24,394 - models.recommendation_engine - INFO - Loaded 100836 ratings
+2025-04-17 18:06:24,406 - models.recommendation_engine - INFO - Loaded 22050 genre entries
+2025-04-17 18:06:24,407 - models.recommendation_engine - INFO - Found 610 unique users
+2025-04-17 18:06:24,407 - models.recommendation_engine - INFO - Building content-based recommendation model
+2025-04-17 18:06:25,006 - models.recommendation_engine - INFO - Content-based model built successfully
+2025-04-17 18:06:25,007 - models.recommendation_engine - INFO - Building collaborative filtering model
+2025-04-17 18:06:25,057 - models.recommendation_engine - INFO - Collaborative filtering model built successfully
+2025-04-17 18:06:25,074 - werkzeug - WARNING -  * Debugger is active!
+2025-04-17 18:06:25,080 - werkzeug - INFO -  * Debugger PIN: 760-779-162
+2025-04-17 18:06:30,458 - models.recommendation_engine - INFO - Loading data from database
+2025-04-17 18:06:30,469 - models.recommendation_engine - INFO - Loaded 9742 movies
+2025-04-17 18:06:30,564 - models.recommendation_engine - INFO - Loaded 100836 ratings
+2025-04-17 18:06:30,576 - models.recommendation_engine - INFO - Loaded 22050 genre entries
+2025-04-17 18:06:30,576 - models.recommendation_engine - INFO - Found 610 unique users
+2025-04-17 18:06:30,576 - models.recommendation_engine - INFO - Building content-based recommendation model
+2025-04-17 18:06:30,979 - models.recommendation_engine - INFO - Content-based model built successfully
+2025-04-17 18:06:30,980 - models.recommendation_engine - INFO - Building collaborative filtering model
+2025-04-17 18:06:31,026 - models.recommendation_engine - INFO - Collaborative filtering model built successfully
+2025-04-17 18:06:31,050 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-17 18:06:31,050 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-17 18:06:31,050 - werkzeug - INFO -  * Restarting with stat
+2025-04-17 18:06:31,675 - models.recommendation_engine - INFO - Loading data from database
+2025-04-17 18:06:31,686 - models.recommendation_engine - INFO - Loaded 9742 movies
+2025-04-17 18:06:31,793 - models.recommendation_engine - INFO - Loaded 100836 ratings
+2025-04-17 18:06:31,806 - models.recommendation_engine - INFO - Loaded 22050 genre entries
+2025-04-17 18:06:31,807 - models.recommendation_engine - INFO - Found 610 unique users
+2025-04-17 18:06:31,807 - models.recommendation_engine - INFO - Building content-based recommendation model
+2025-04-17 18:06:32,373 - models.recommendation_engine - INFO - Content-based model built successfully
+2025-04-17 18:06:32,374 - models.recommendation_engine - INFO - Building collaborative filtering model
+2025-04-17 18:06:32,421 - models.recommendation_engine - INFO - Collaborative filtering model built successfully
+2025-04-17 18:06:32,437 - werkzeug - WARNING -  * Debugger is active!
+2025-04-17 18:06:32,442 - werkzeug - INFO -  * Debugger PIN: 760-779-162
+2025-04-17 18:07:07,398 - models.recommendation_engine - INFO - Getting 10 popular movies
+2025-04-17 18:07:08,061 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:07:08] "GET / HTTP/1.1" 200 -
+2025-04-17 18:07:08,189 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:07:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-17 18:08:00,721 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:08:00] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-04-17 18:08:00,747 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:08:00] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-17 18:08:00,747 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:08:00] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-17 18:08:00,758 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:08:00] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=HTPvKqIJrW8JWzX6AxO6 HTTP/1.1" 200 -
+2025-04-17 18:08:00,838 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:08:00] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-17 18:08:04,863 - werkzeug - INFO -  * To enable the debugger you need to enter the security pin:
+2025-04-17 18:08:04,863 - werkzeug - INFO -  * Debugger pin code: 760-779-162
+2025-04-17 18:08:04,864 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:08:04] "GET /login?__debugger__=yes&cmd=printpin&s=HTPvKqIJrW8JWzX6AxO6 HTTP/1.1" 200 -
+2025-04-17 18:08:12,962 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:08:12] "GET /login?__debugger__=yes&cmd=pinauth&pin=&s=HTPvKqIJrW8JWzX6AxO6 HTTP/1.1" 200 -
+2025-04-17 18:08:19,088 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:08:19] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-04-17 18:08:19,094 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:08:19] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-17 18:08:19,094 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:08:19] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-17 18:08:19,097 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:08:19] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png&s=HTPvKqIJrW8JWzX6AxO6 HTTP/1.1[0m" 304 -
+2025-04-17 18:08:34,085 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:08:34] "[35m[1mGET /login HTTP/1.1[0m" 500 -
+2025-04-17 18:08:34,096 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:08:34] "[36mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-17 18:08:34,097 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:08:34] "[36mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-17 18:08:34,100 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:08:34] "[36mGET /login?__debugger__=yes&cmd=resource&f=console.png&s=HTPvKqIJrW8JWzX6AxO6 HTTP/1.1[0m" 304 -
+2025-04-17 18:08:40,454 - models.recommendation_engine - INFO - Getting 10 popular movies
+2025-04-17 18:08:40,771 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:08:40] "GET / HTTP/1.1" 200 -
+2025-04-17 18:28:59,703 - models.recommendation_engine - INFO - Getting 10 popular movies
+2025-04-17 18:29:00,068 - werkzeug - INFO - 127.0.0.1 - - [17/Apr/2025 18:29:00] "GET / HTTP/1.1" 200 -
+2025-04-18 08:55:10,015 - models.recommendation_engine - INFO - Loading data from database
+2025-04-18 08:55:10,034 - models.recommendation_engine - INFO - Loaded 9742 movies
+2025-04-18 08:55:10,145 - models.recommendation_engine - INFO - Loaded 100836 ratings
+2025-04-18 08:55:10,157 - models.recommendation_engine - INFO - Loaded 22050 genre entries
+2025-04-18 08:55:10,158 - models.recommendation_engine - INFO - Found 610 unique users
+2025-04-18 08:55:10,158 - models.recommendation_engine - INFO - Building content-based recommendation model
+2025-04-18 08:55:10,679 - models.recommendation_engine - INFO - Content-based model built successfully
+2025-04-18 08:55:10,679 - models.recommendation_engine - INFO - Building collaborative filtering model
+2025-04-18 08:55:10,728 - models.recommendation_engine - INFO - Collaborative filtering model built successfully
+2025-04-18 08:55:10,780 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-18 08:55:10,780 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-18 08:55:10,780 - werkzeug - INFO -  * Restarting with stat
+2025-04-18 08:55:11,587 - models.recommendation_engine - INFO - Loading data from database
+2025-04-18 08:55:11,598 - models.recommendation_engine - INFO - Loaded 9742 movies
+2025-04-18 08:55:11,694 - models.recommendation_engine - INFO - Loaded 100836 ratings
+2025-04-18 08:55:11,706 - models.recommendation_engine - INFO - Loaded 22050 genre entries
+2025-04-18 08:55:11,706 - models.recommendation_engine - INFO - Found 610 unique users
+2025-04-18 08:55:11,706 - models.recommendation_engine - INFO - Building content-based recommendation model
+2025-04-18 08:55:12,216 - models.recommendation_engine - INFO - Content-based model built successfully
+2025-04-18 08:55:12,218 - models.recommendation_engine - INFO - Building collaborative filtering model
+2025-04-18 08:55:12,266 - models.recommendation_engine - INFO - Collaborative filtering model built successfully
+2025-04-18 08:55:12,282 - werkzeug - WARNING -  * Debugger is active!
+2025-04-18 08:55:12,289 - werkzeug - INFO -  * Debugger PIN: 112-581-637
+2025-04-18 08:55:27,783 - models.recommendation_engine - INFO - Getting 10 popular movies
+2025-04-18 08:55:28,156 - models.recommendation_engine - INFO - Getting 10 popular movies
+2025-04-18 08:55:28,494 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 08:55:28] "GET / HTTP/1.1" 200 -
+2025-04-18 08:55:28,516 - werkzeug - INFO - 127.0.0.1 - - [18/Apr/2025 08:55:28] "GET / HTTP/1.1" 200 -

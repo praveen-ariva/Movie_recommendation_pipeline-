@@ -1,0 +1,105 @@
+<div class="row mb-5">
+    <div class="col-md-12">
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Movie Recommendation System</h1>
+                <p class="col-md-8 fs-4">Discover movies you'll love based on your preferences and viewing history.</p>
+                {% if not user_id %}
+                <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg">Get Personalized Recommendations</a>
+                {% else %}
+                <a href="{{ url_for('recommendations') }}" class="btn btn-primary btn-lg">View Your Recommendations</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Analytics Section -->
+<div class="row mb-4">
+    <div class="col-12">
+        <h2 class="mb-4">Movie Analytics</h2>
+    </div>
+    <div class="col-md-6">
+        <div class="card chart-container">
+            <div class="card-header">
+                Rating Distribution
+            </div>
+            <div class="card-body">
+                <img src="data:image/png;base64,{{ ratings_chart }}" alt="Rating Distribution" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card chart-container">
+            <div class="card-header">
+                Top Movie Genres
+            </div>
+            <div class="card-body">
+                <img src="data:image/png;base64,{{ genres_chart }}" alt="Genre Distribution" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Popular Movies Section -->
+<div class="row mb-5">
+    <div class="col-12">
+        <h2 class="mb-4">Popular Movies</h2>
+    </div>
+    
+    {% for movie in popular_movies %}
+    <div class="col-md-3 mb-4">
+        <div class="card h-100 movie-card">
+            <div class="card-body">
+                <span class="badge bg-primary rating-badge">{{ movie.avg_rating|round(1) }} ★</span>
+                <h5 class="card-title">{{ movie.title }}</h5>
+                <p class="card-text text-muted">{{ movie.genres }}</p>
+                <p class="card-text"><small class="text-muted">{{ movie.rating_count }} ratings</small></p>
+            </div>
+            <div class="card-footer bg-transparent border-top-0">
+                <a href="{{ url_for('movie_details', movie_id=movie.movieId) }}" class="btn btn-sm btn-outline-primary w-100">Details</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Features Section -->
+<div class="row my-5">
+    <div class="col-12">
+        <h2 class="text-center mb-4">Features</h2>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <div class="mb-3">
+                    <i class="bi bi-graph-up fs-1 text-primary"></i>
+                </div>
+                <h5 class="card-title">Content-Based Recommendations</h5>
+                <p class="card-text">Discover movies similar to those you already enjoy based on genres, actors, and plot elements.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <div class="mb-3">
+                    <i class="bi bi-people fs-1 text-primary"></i>
+                </div>
+                <h5 class="card-title">Collaborative Filtering</h5>
+                <p class="card-text">Get recommendations based on users with similar tastes and preferences to yours.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <div class="mb-3">
+                    <i class="bi bi-bar-chart fs-1 text-primary"></i>
+                </div>
+                <h5 class="card-title">Insightful Analytics</h5>
+                <p class="card-text">Explore trends and patterns in movie ratings, genres, and user preferences.</p>
+            </div>
+        </div>
+    </div>
+</div>

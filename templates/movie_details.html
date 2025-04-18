@@ -1,0 +1,67 @@
+<div class="row mb-5">
+    <div class="col-md-8">
+        <h1 class="mb-3">{{ movie.title }}</h1>
+        
+        <div class="mb-4">
+            <span class="badge bg-secondary me-1">{{ genre }}</span>
+            
+            <span class="badge bg-dark">{{ movie.year }}</span>
+        </div>
+        
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">Movie Information</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>Average Rating:</strong> {{ movie.average_rating|round(2) }} ★</p>
+                        <p><strong>Number of Ratings:</strong> {{ movie.num_ratings }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>Movie ID:</strong> {{ movie.movieId }}</p>
+                        <p><strong>Release Year:</strong> {{ movie.year }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header">
+                <h5 class="mb-0">Rating Distribution</h5>
+            </div>
+            <div class="card-body">
+                <img src="data:image/png;base64,{{ ratings_chart }}" alt="Rating Distribution" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="mb-0">Similar Movies</h5>
+            </div>
+            <div class="card-body p-0">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <a href="{{ url_for('movie_details', movie_id=movie.movieId) }}" class="text-decoration-none">
+                                    {{ movie.title }}
+                                </a>
+                                <br>
+                                <small class="text-muted">{{ movie.avg_rating|round(1) }} ★</small>
+                            </div>
+                            <span class="badge bg-light text-dark">{{ (movie.similarity_score * 100)|round }}% match</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="d-grid gap-2">
+            <a href="{{ url_for('index') }}" class="btn btn-outline-primary">Back to Home</a>
+            <a href="{{ url_for('recommendations') }}" class="btn btn-outline-primary">Back to Recommendations</a>
+        </div>
+    </div>
+</div>
