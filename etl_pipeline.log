@@ -1,0 +1,26 @@
+2025-04-17 16:55:17,175 - __main__ - INFO - Starting ETL pipeline
+2025-04-17 16:55:17,175 - __main__ - INFO - Starting data extraction
+2025-04-17 16:55:17,176 - __main__ - ERROR - Error during extraction: [Errno 2] No such file or directory: './ml-latest-small/movies.csv'
+2025-04-17 16:55:17,176 - __main__ - ERROR - Extraction failed, stopping pipeline
+2025-04-17 16:57:30,200 - __main__ - INFO - Starting ETL pipeline
+2025-04-17 16:57:30,200 - __main__ - INFO - Starting data extraction
+2025-04-17 16:57:30,200 - __main__ - ERROR - Error during extraction: [Errno 2] No such file or directory: './ml-latest-small/movies.csv'
+2025-04-17 16:57:30,200 - __main__ - ERROR - Extraction failed, stopping pipeline
+2025-04-17 17:02:27,559 - __main__ - INFO - Starting ETL pipeline
+2025-04-17 17:02:27,560 - __main__ - INFO - Starting data extraction
+2025-04-17 17:02:27,568 - __main__ - INFO - Loaded 9742 movies
+2025-04-17 17:02:27,582 - __main__ - INFO - Loaded 100836 ratings
+2025-04-17 17:02:27,584 - __main__ - INFO - Loaded 3683 tags
+2025-04-17 17:02:27,584 - __main__ - INFO - Starting data transformation
+2025-04-17 17:02:27,584 - __main__ - INFO - Extracting year from movie titles
+2025-04-17 17:02:27,593 - __main__ - INFO - Processing movie genres
+2025-04-17 17:02:27,595 - __main__ - INFO - Calculating average ratings
+2025-04-17 17:02:27,602 - __main__ - INFO - Data transformation completed
+2025-04-17 17:02:27,602 - __main__ - INFO - Starting data loading
+2025-04-17 17:02:27,602 - __main__ - INFO - Connecting to database: sqlite:///movie_recommendation.db
+2025-04-17 17:02:27,602 - __main__ - INFO - Loading movies data
+2025-04-17 17:02:27,628 - __main__ - INFO - Loading ratings data
+2025-04-17 17:02:27,801 - __main__ - INFO - Loading tags data
+2025-04-17 17:02:27,808 - __main__ - INFO - Creating normalized genre tables
+2025-04-17 17:02:27,936 - __main__ - INFO - Data loading completed
+2025-04-17 17:02:27,936 - __main__ - INFO - ETL pipeline completed successfully

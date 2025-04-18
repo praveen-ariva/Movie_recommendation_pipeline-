@@ -1,0 +1,54 @@
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="mb-0">Login</h3>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <div class="mb-3">
+                        <label for="user_id" class="form-label">User ID</label>
+                        <input type="number" class="form-control" id="user_id" name="user_id" required>
+                        <div class="form-text">Enter a valid User ID from the MovieLens dataset.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </div>
+        
+        {% if user_ids %}
+        <div class="card mt-4">
+            <div class="card-header">
+                <h5 class="mb-0">Sample User IDs for Testing</h5>
+            </div>
+            <div class="card-body">
+                <p class="card-text">For demonstration purposes, you can use any of these sample user IDs:</p>
+                <div class="d-flex flex-wrap">
+                    {% for user_id in user_ids %}
+                    <button class="btn btn-sm btn-outline-secondary me-2 mb-2 sample-user-id" 
+                            data-user-id="{{ user_id }}">
+                        {{ user_id }}
+                    </button>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    // Add event listeners to sample user ID buttons
+    document.addEventListener('DOMContentLoaded', function() {
+        const sampleButtons = document.querySelectorAll('.sample-user-id');
+        const userIdInput = document.getElementById('user_id');
+        
+        sampleButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                userIdInput.value = this.getAttribute('data-user-id');
+            });
+        });
+    });
+</script>

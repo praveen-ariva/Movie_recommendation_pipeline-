@@ -1,0 +1,106 @@
+<div class="row mb-4">
+    <div class="col-12">
+        <h1>Movie Analytics Dashboard</h1>
+        <p class="text-muted">Insights and trends from our movie database</p>
+    </div>
+</div>
+
+<!-- Charts Section -->
+<div class="row mb-5">
+    <div class="col-md-6">
+        <div class="card chart-container">
+            <div class="card-header">
+                <h5 class="mb-0">Movie Genre Distribution</h5>
+            </div>
+            <div class="card-body">
+                <img src="data:image/png;base64,{{ genres_pie }}" alt="Genre Distribution" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card chart-container">
+            <div class="card-header">
+                <h5 class="mb-0">Ratings Over Time</h5>
+            </div>
+            <div class="card-body">
+                <img src="data:image/png;base64,{{ ratings_time_chart }}" alt="Ratings Over Time" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Top Rated Movies Section -->
+<div class="row mb-5">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">Top Rated Movies</h2>
+                <small class="text-muted">(Movies with at least 100 ratings)</small>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Title</th>
+                                <th>Average Rating</th>
+                                <th>Number of Ratings</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{ loop.index }}</td>
+                                <td>{{ movie.title }}</td>
+                                <td>{{ movie.avg_rating|round(2) }} ★</td>
+                                <td>{{ movie.rating_count }}</td>
+                                <td>
+                                    <a href="{{ url_for('movie_details', movie_id=movie.movieId) }}" class="btn btn-sm btn-outline-primary">Details</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Most Popular Movies Section -->
+<div class="row mb-5">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">Most Popular Movies</h2>
+                <small class="text-muted">(By number of ratings)</small>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Title</th>
+                                <th>Average Rating</th>
+                                <th>Number of Ratings</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>{{ loop.index }}</td>
+                                <td>{{ movie.title }}</td>
+                                <td>{{ movie.avg_rating|round(2) }} ★</td>
+                                <td>{{ movie.rating_count }}</td>
+                                <td>
+                                    <a href="{{ url_for('movie_details', movie_id=movie.movieId) }}" class="btn btn-sm btn-outline-primary">Details</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
